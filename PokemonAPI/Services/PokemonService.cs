@@ -12,9 +12,9 @@ namespace PokemonAPI.Services {
             _pokemonApi = pokemonApi;
         }
 
-        public async Task<ResponseGenerico<PokemonResponse>> BuscarPokemon(string name) {
+        public async Task<ResponseGenerico<PokemonResponse>> BuscarPokemonPorNome(string name) {
             var pokemon = await _pokemonApi.BuscarPokemonPorNome(name);
             return _mapper.Map<ResponseGenerico<PokemonResponse>>(pokemon);
-        }
+        }    
     }
 }

@@ -2,9 +2,9 @@
 
 namespace PokemonAPI.Dtos {
     public class PokemonResponse {
-        public string Nome { get; set; }
+        public string Pokemon { get; set; }
         public List<AbilitiesModel> Habilidades { get; set; }
-        public double Altura { get; set; }
-        public double Peso { get; set; }
+        public int Altura { get; set; }
+        public int Peso { get; set; }
     }
 }

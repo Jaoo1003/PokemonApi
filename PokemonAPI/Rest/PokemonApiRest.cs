@@ -26,9 +26,9 @@ namespace PokemonAPI.Rest {
                 }
             }
             return response;
-        }
+        }        
         public Task<ResponseGenerico<AbilitiesModel>> BuscarAbilities() {
             throw new NotImplementedException();
-        }        
+        }
     }
 }

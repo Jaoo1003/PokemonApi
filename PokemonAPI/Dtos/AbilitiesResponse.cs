@@ -2,6 +2,6 @@
 
 namespace PokemonAPI.Dtos {
     public class AbilitiesResponse {
-        public List<AbilityModel>? Habilidades { get; set; }
+        public AbilityModel? Habilidades { get; set; }
     }
 }

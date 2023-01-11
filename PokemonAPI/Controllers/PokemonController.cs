@@ -13,8 +13,8 @@ namespace PokemonAPI.Controllers {
         }
 
         [HttpGet("buscar/{name}")]
-        public async Task<IActionResult> BuscarPokemon([FromRoute] string name) {
-            var response = await _pokemonService.BuscarPokemon(name);
+        public async Task<IActionResult> BuscarPokemonPorNome([FromRoute] string name) {
+            var response = await _pokemonService.BuscarPokemonPorNome(name);
 
             if (response.CodigoHttp == HttpStatusCode.OK) {
                 return Ok(response.DadosRetorno);

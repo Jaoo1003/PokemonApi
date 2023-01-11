@@ -2,6 +2,6 @@
 
 namespace PokemonAPI.Interfaces {
     public interface IPokemonService {
-        Task<ResponseGenerico<PokemonResponse>> BuscarPokemon(string name);
+        Task<ResponseGenerico<PokemonResponse>> BuscarPokemonPorNome(string name);
     }
 }
